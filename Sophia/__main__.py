@@ -76,15 +76,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 𝗦𝗼𝗽𝗵𝗶𝗮 
-𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
-Project By @DihanOfficial ❤
+𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 ༒ 𝓥 𝓘 𝓢 𝓐 ༒
+𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/917f07bccd07bed9b7cb6.png)
+Project By @Visa_Support ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
+            text="➕ Add ༒ 𝓥 𝓘 𝓢 𝓐 ༒ to your Group ➕", url="t.me/MissVisa_Bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
@@ -93,9 +93,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/dihanofficial"),
+        InlineKeyboardButton(text="🙋‍♀️ Chat Group ", url=f"https://t.me/WeGetTogether"),
         InlineKeyboardButton(
-            text="💬 Support Group", url=f"https://t.me/dihan_official"
+            text="💬 Support Group", url=f"https://t.me/Visa_Support"
         ),
     ],
     [
@@ -105,14 +105,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` 𝗦𝗼𝗽𝗵𝗶𝗮 
-Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @dihanofficial 💓 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) """
+`Hi.. I'm` ༒ 𝓥 𝓘 𝓢 𝓐 ༒
+Click On The Buttons Below To Get ༒ 𝓥 𝓘 𝓢 𝓐 ༒ Documentation About Specific Modules..
+Powered by @Visa_Support 💓 [️️ ️](https://telegra.ph/file/9db5728da1b4c5cc451df.png) """
 
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Dihan Randila](t.me/dihanrandila) \
- Supporting isnt always financial! [Dihan Official](t.me/dihanofficial) \
+ You can support the project Of [CALL ME VP](t.me/CALL_ME-VP) \
+ Supporting isnt always financial! [Visa Support](t.me/Visa_Support) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -354,32 +354,31 @@ def help_button(update, context):
 
 
 @run_async
-def sophia_about_callback(update, context):
+def MissVisa_about_callback(update, context):
     query = update.callback_query
-    if query.data == "sophia_":
+    if query.data == "MissVisa_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *༒ 𝓥 𝓘 𝓢 𝓐 ༒*, a powerful group management bot built to help you manage your group easily.
                  \n* I can restrict users.
                  \n* I can greet users with customizable welcome messages and even set a group's rules.
                  \n* I have an advanced anti-flood system.
                  \n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n* I check for admins' permissions before executing any command
-                 \n* Awesome Secret @DihanOfficial
-                 \n* Support Group @dihan_official
-                 \* Assistant @SophiaX_Support
-                 \n\nIf you have any question about Sophia, let us know at .""",
+                 \n* Support Group @Visa_Support
+                 \* Assistant @WeGetTogether
+                 \n\nIf you have any question about ༒ 𝓥 𝓘 𝓢 𝓐 ༒ , let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="sophia_back")
+                    InlineKeyboardButton(text="Back", callback_data="MissVisa_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "sophia_back":
+    elif query.data == "MissVisa_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -399,8 +398,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😍 I'm *Sophia*
-                 \nHere is the [Source Code](https://github.com/dihanofficial/Sophia) .""",
+            text=""" Hi..😍 I'm *༒ 𝓥 𝓘 𝓢 𝓐 ༒*
+                 \nHere is the [MissVisa Code](https://github.com/MissVisa/MissVisa) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
