@@ -1,16 +1,16 @@
   
 {
-      "name": "Sophia",
+      "name": "MissVisa",
       "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/821d3e03f45048f038a6e.jpg",
+      "logo": "https://telegra.ph/file/20b2e45573040ad7fae0e.png",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Sophia"
+         "MissVisa"
       ],   
-   "repository": "https://github.com/dihanofficial/sophia",
+   "repository": "https://github.com/MissVisa/MissVisa",
    "addons": [
       {
          "options": {
@@ -183,7 +183,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/dihanofficial"
+         "value": "https://t.me/Visa_Support"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
