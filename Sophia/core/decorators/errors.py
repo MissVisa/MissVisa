@@ -1,7 +1,7 @@
 
   
 ""
-" WRITTEN BY @DihanRandila, https://github.com/Dihanrandila1"""
+" WRITTEN BY @CALL_ME_VP, https://github.com/MissVisa"""
 
 import sys
 import traceback
