@@ -68,7 +68,24 @@ TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e354ce72d5cc6a1d27c4d.jpg",
                          "https://telegra.ph/file/1c6a5cd6d82f92c646c0f.jpg", 
                          "https://telegra.ph/file/2c1056c91c8f37fea838a.jpg",
                          "https://telegra.ph/file/f140c121d03dfcaf4e951.jpg", 
-                         "https://telegra.ph/file/39f7b5d1d7a3487f6ba69.jpg"
+                         "https://telegra.ph/file/39f7b5d1d7a3487f6ba69.jpg",
+                         "https://telegra.ph/file/b5ebb0eb6718e8a94a97f.jpg",
+                         "https://telegra.ph/file/26e3d85d66007dec19103.jpg",
+                         "https://telegra.ph/file/7dfe43b6d67edfe177689.jpg",
+                         "https://telegra.ph/file/d03ee501a3dacaf58b10b.jpg",
+                         "https://telegra.ph/file/dc9d4d8e056d2283e4173.jpg",
+                         "https://telegra.ph/file/522130e0afa9a33823657.jpg",
+                         "https://telegra.ph/file/772656d895712ff9b7b21.jpg",
+                         "https://telegra.ph/file/e6b833e1994e090604cc8.jpg",
+                         "https://telegra.ph/file/8c135f884ecd341723aef.jpg",
+                         "https://telegra.ph/file/54c13ba2170a2b1595779.jpg",
+                         'https://telegra.ph/file/c2b53ba0f87c7437f157c.jpg",
+                         "https://telegra.ph/file/ca335acbcb5c856edd2cd.jpg",
+                         "https://telegra.ph/file/283ab3233e2ee2a96c9df.jpg",
+                         "https://telegra.ph/file/3f5dd39b0ec36faca47de.jpg",
+                         "https://telegra.ph/file/ef00ca80e9f03258b4440.jpg",
+                         "https://telegra.ph/file/041cabc248eeafb0c920c.jpg",
+                         "https://telegra.ph/file/25067302713fa4bd1c552.jpg"
                          ]
 
 @register(pattern="^/logo ?(.*)")
@@ -102,11 +119,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="gold", stroke_width=0, stroke_fill="gold")
     fname2 = "SophiaLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @SophiaSLBot 💞")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @MissVisa_Bot 💞")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @Dihan_Official, {e}')
+   await event.reply(f'Error Go to Help From  @Visa_Support, {e}')
 
 
 
@@ -142,11 +159,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
     fname2 = "SophiaLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @SophiaSLBot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @MissVisa_Bot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @Dihan_Official, {e}')
+   await event.reply(f'Error Go to Help From  @Visa_Support, {e}')
 
 
 
@@ -182,11 +199,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="red", stroke_width=0, stroke_fill="red")
     fname2 = "SophiaLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @SophiaSLBot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @MissVisa_Bot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @Dihan_Official, {e}')
+   await event.reply(f'Error Go to Help From  @Visa_Support, {e}')
 
 
 
